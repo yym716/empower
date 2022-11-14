@@ -1,0 +1,102 @@
+//界面显示颜色以及去除边框
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+    background-color: rgb(35, 44, 49);
+}
+.el-table td {
+    border: 0;
+}
+.el-table th.is-leaf {
+  border-bottom: 1px solid rgb(75, 95, 107);
+}
+//界面显示颜色以及去除边框
+
+//hover高亮以及点击后高亮颜色
+.el-table--enable-row-hover .el-table__body tr:hover>td,
+.el-table__body tr.hover-row.current-row>td, 
+.el-table__body tr.hover-row.el-table__row--striped.current-row>td, 
+.el-table__body tr.hover-row.el-table__row--striped>td, 
+.el-table__body tr.hover-row>td {
+    background-color: rgb(52, 66, 74) !important;
+}
+.el-table__body tr.current-row>td {
+    background-color: rgb(52, 66, 74) !important;
+}
+//hover高亮以及点击后高亮颜色
+
+//表头需要的样式
+.public-table-header {
+    background-color: rgb(33, 42, 47) !important;
+    text-align: center !important;
+    color: rgb(175, 190, 199) !important;
+    // font-size: 16px !important;
+    font-weight: 800;
+}
+
+//表格行需要的样式
+.public-table-row {
+    background-color: rgb(37, 46, 52) !important;
+    color: #ffffff;
+    
+}
+.public-table-cell {
+  text-align: center !important;
+}
+
+//去除表格底部的白线
+.el-table::before,
+.el-table__fixed-right::before, 
+.el-table__fixed::before  {
+  height: 0px;
+}
+
+//表格出滚动条时表头多出一列背景颜色修改
+.el-table td.gutter, .el-table th.gutter {
+  background-color: rgb(33, 42, 47) !important;
+}
+.el-table {
+  background-color: rgb(35, 44, 49) !important;
+}
+
+.el-table__empty-block {
+  background-color: rgb(35, 44, 49) !important;
+}
+.el-table__body-wrapper {
+  background-color: rgb(35, 44, 49) !important;
+  // width: 100%;
+  // height: 100% !important;
+}
+
+//表格滚动条样式修改
+::-webkit-scrollbar-track-piece {
+  //滚动条凹槽的颜色，还可以设置边框属性
+  background-color: rgb(28, 35, 39);
+  
+}
+   
+::-webkit-scrollbar {
+  //滚动条的宽度
+  width: 5px;
+  height: 5px;
+}
+   
+::-webkit-scrollbar-thumb {
+  //滚动条的设置
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgb(75, 95, 107);
+  background-clip: padding-box;
+  border-radius: 20px;
+}
+   
+.el-table--scrollable-x .el-table__body-wrapper {
+  overflow-x: auto;
+}
+.el-checkbox__inner{
+  background-color: #1A2025;
+}
+
+.el-table__expanded-cell[class*=cell] {
+  background-color: rgb(35, 44, 49) !important;
+}
+.el-table--scrollable-y .el-table__body-wrapper {
+  overflow-y: auto;
+}

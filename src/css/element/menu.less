@@ -1,0 +1,76 @@
+//头部banner栏菜单导航
+.public-menu {
+    &.el-menu {
+        font-size: 20px;
+        background-color: transparent !important;
+    }
+    &.el-menu.el-menu--horizontal {
+        border-bottom: 0;
+    }
+    .el-menu-item {
+        border-bottom: 0 !important;
+        margin-left: 3px;
+        background-color: #252e34 !important;
+        border-top-left-radius: 10px;  
+        border-top-right-radius: 10px;
+        font-size: 20px !important;
+    }
+    .el-menu-item.is-active {
+        background-color: rgb(30, 38, 43) !important;
+        border-bottom: 0 !important;
+        font-size: 20px !important;
+        text-shadow: 0 0 5px #fff;
+    }
+}
+
+
+//二级菜单样式
+.public-subMenu {
+    &.el-menu {
+        background-color: transparent !important;
+        border-right: 0;
+    }
+    .el-menu-item {
+        padding: 0 !important;
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+        background-color: rgb(52, 66, 74);
+        margin-bottom: 10px;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        i {
+            font-size: 50px;
+            width: 50px;
+        }
+        span {
+            font-size: 18px;
+            margin-top: 25px;
+        }
+    }
+    .el-menu-item [class^=el-icon-] {
+        margin-right: 0;
+    }
+    .el-menu-item.is-active {
+        background-color: #1699f4 !important;
+    }
+    .el-menu-item, .el-submenu__title {
+        line-height: 0;
+    }
+}
+
+// 菜单栏
+.el-menu--popup {
+    min-width: 180px;
+}
+.el-menu--horizontal .el-menu .el-menu-item, .el-menu-item {
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+}
+.el-menu--popup-bottom-start {
+    margin-right: 10px;
+}
